@@ -31,10 +31,10 @@ $vendor = dokan()->vendor->get( $seller );
 
 $store_info = dokan_get_store_info( $author->ID );
 
-if ( !empty( $store_info['vendor_biography'] ) ) { ?>
-<span class="details">
-<?php printf( $vendor->get_vendor_biography() ); ?>
-</span>
-<?php
-}	
+    if ( ! empty( $store_info['vendor_biography'] ) ) {
+        echo '<h2>Vendor Biography</h2>';
+        echo '<span class="details">';
+        printf( $vendor->get_vendor_biography() );
+        echo '</span>';
+    }
 }
