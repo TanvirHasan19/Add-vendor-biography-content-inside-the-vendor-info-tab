@@ -1,5 +1,5 @@
 /**
- * Add vendor biography content inside the vendor info tab
+ * Add vendor biography content inside the vendor info tab on the single product page
  */
 add_filter( 'woocommerce_product_tabs', 'woo_custom_description_tab', 98 );
 function woo_custom_description_tab( $tabs ) {
